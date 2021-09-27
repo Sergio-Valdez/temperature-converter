@@ -4,19 +4,21 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Sergio Cindy Zac"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-09-27 01:28:31 PM"/>
+        <attribute name="saved" value="2021-09-27 01:34:49 PM"/>
         <attribute name="created" value="c2VyZ2k7R0VPOzIwMjEtMDktMjc7MTE6MjM6MDIgQU07MjAxOA=="/>
-        <attribute name="edited" value="c2VyZ2k7R0VPOzIwMjEtMDktMjc7MDE6Mjg6MzEgUE07MjsyMTQ4"/>
+        <attribute name="edited" value="c2VyZ2k7R0VPOzIwMjEtMDktMjc7MDE6MzQ6NDkgUE07NDsyMTU2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="Celsius" type="Real" array="False" size=""/>
-            <output expression="&quot;Enter a temperature in Celsius degrees&quot;" newline="True"/>
-            <input variable="Celsius"/>
-            <declare name="Fahrenheit" type="Real" array="False" size=""/>
-            <assign variable="Fahrenheit" expression="convertC2F(Celsius)"/>
-            <output expression="Fahrenheit" newline="True"/>
+            <while expression="true">
+                <declare name="Celsius" type="Real" array="False" size=""/>
+                <output expression="&quot;Enter a temperature in Celsius degrees&quot;" newline="True"/>
+                <input variable="Celsius"/>
+                <declare name="Fahrenheit" type="Real" array="False" size=""/>
+                <assign variable="Fahrenheit" expression="convertC2F(Celsius)"/>
+                <output expression="Fahrenheit" newline="True"/>
+            </while>
         </body>
     </function>
     <function name="convertC2F" type="Real" variable="Fahrenheit">
